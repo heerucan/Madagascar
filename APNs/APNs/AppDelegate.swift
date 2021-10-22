@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
-//        Messaging.messaging().delegate = self
+        Messaging.messaging().delegate = self
         
         if #available(iOS 10.0, *) {
           // For iOS 10 display notification (sent via APNS)
@@ -102,29 +102,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-//// MARK: - MessagingDelegate
-//extension AppDelegate: MessagingDelegate {
-//    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
-//        // 현재 등록 토큰 접근하기
-//        Messaging.messaging().token { token, error in
-//          if let error = error {
-//            print("Error fetching FCM registration token: \(error)")
-//          } else if let token = token {
-//            print("FCM registration token: \(token)")
-//          }
-//        }
-//
-//        // 토큰 갱신 모니터링
-//        print("Firebase registration token: \(String(describing: fcmToken))")
-//
-//          let dataDict: [String: String] = ["token": fcmToken ?? ""]
-//          NotificationCenter.default.post(
-//            name: Notification.Name("FCMToken"),
-//            object: nil,
-//            userInfo: dataDict
-//          )
-//    }
-//}
+// MARK: - MessagingDelegate
+extension AppDelegate: MessagingDelegate {
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        // 현재 등록 토큰 접근하기
+        Messaging.messaging().token { token, error in
+          if let error = error {
+            print("Error fetching FCM registration token: \(error)")
+          } else if let token = token {
+            print("FCM registration token: \(token)")
+          }
+        }
+
+        // 토큰 갱신 모니터링
+        print("Firebase registration token: \(String(describing: fcmToken))")
+
+          let dataDict: [String: String] = ["token": fcmToken ?? ""]
+          NotificationCenter.default.post(
+            name: Notification.Name("FCMToken"),
+            object: nil,
+            userInfo: dataDict
+          )
+    }
+}
 
 @available(iOS 10, *)
 extension AppDelegate: UNUserNotificationCenterDelegate {
