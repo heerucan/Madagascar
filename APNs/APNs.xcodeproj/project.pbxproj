@@ -30,6 +30,7 @@
 		5B76A230272274210018C71D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B76A232272274210018C71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B76A238272279330018C71D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B76A23A272282AD0018C71D /* APNs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = APNs.entitlements; sourceTree = "<group>"; };
 		8DE93D235845630BD01A17FB /* Pods-APNs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNs.debug.xcconfig"; path = "Target Support Files/Pods-APNs/Pods-APNs.debug.xcconfig"; sourceTree = "<group>"; };
 		D8EADC6CAA4BFEB45B6637DA /* Pods_APNs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APNs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +85,7 @@
 		5B76A2202722741C0018C71D /* APNs */ = {
 			isa = PBXGroup;
 			children = (
+				5B76A23A272282AD0018C71D /* APNs.entitlements */,
 				5B76A2212722741C0018C71D /* AppDelegate.swift */,
 				5B76A2232722741C0018C71D /* SceneDelegate.swift */,
 				5B76A2252722741C0018C71D /* ViewController.swift */,
@@ -364,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = APNs/APNs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4QG3GC35LA;
@@ -393,6 +396,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = APNs/APNs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4QG3GC35LA;

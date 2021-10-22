@@ -7,6 +7,8 @@
 
 import UIKit
 import CoreData
+import Firebase
+import FirebaseMessaging
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
