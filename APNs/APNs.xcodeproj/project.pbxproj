@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B2796DB2723AC9400999641 /* CustomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2796DA2723AC9400999641 /* CustomActivity.swift */; };
 		5B76A2222722741C0018C71D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A2212722741C0018C71D /* AppDelegate.swift */; };
 		5B76A2242722741C0018C71D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A2232722741C0018C71D /* SceneDelegate.swift */; };
 		5B76A2262722741C0018C71D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A2252722741C0018C71D /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		4BF089D8BD350F61176E222C /* Pods-APNs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNs.release.xcconfig"; path = "Target Support Files/Pods-APNs/Pods-APNs.release.xcconfig"; sourceTree = "<group>"; };
+		5B2796DA2723AC9400999641 /* CustomActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivity.swift; sourceTree = "<group>"; };
 		5B76A21E2722741C0018C71D /* APNs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APNs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B76A2212722741C0018C71D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B76A2232722741C0018C71D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				5B76A2212722741C0018C71D /* AppDelegate.swift */,
 				5B76A2232722741C0018C71D /* SceneDelegate.swift */,
 				5B76A2252722741C0018C71D /* ViewController.swift */,
+				5B2796DA2723AC9400999641 /* CustomActivity.swift */,
 				5B76A2272722741C0018C71D /* Main.storyboard */,
 				5B76A22D272274210018C71D /* Assets.xcassets */,
 				5B76A22F272274210018C71D /* LaunchScreen.storyboard */,
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2796DB2723AC9400999641 /* CustomActivity.swift in Sources */,
 				5B76A2262722741C0018C71D /* ViewController.swift in Sources */,
 				5B76A2222722741C0018C71D /* AppDelegate.swift in Sources */,
 				5B76A2242722741C0018C71D /* SceneDelegate.swift in Sources */,

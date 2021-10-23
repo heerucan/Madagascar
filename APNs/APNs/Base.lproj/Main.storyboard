@@ -19,15 +19,41 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mada" translatesAutoresizingMaskIntoConstraints="NO" id="bW2-ru-cdy">
                                 <rect key="frame" x="30" y="247" width="354" height="402"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rl6-aY-itZ">
+                                <rect key="frame" x="157" y="130" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="bed-7z-awb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SP-Xw-9WT">
+                                <rect key="frame" x="157" y="208" width="100" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="76D-fJ-Brd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H6m-Oz-8vH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bW2-ru-cdy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hdf-3n-zgL"/>
+                            <constraint firstItem="rl6-aY-itZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KlR-bO-npa"/>
                             <constraint firstItem="bW2-ru-cdy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="Kql-N4-OIF"/>
+                            <constraint firstItem="4SP-Xw-9WT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OWA-Ks-tmY"/>
+                            <constraint firstItem="4SP-Xw-9WT" firstAttribute="top" secondItem="rl6-aY-itZ" secondAttribute="bottom" constant="44" id="PMV-8Q-0VS"/>
+                            <constraint firstItem="rl6-aY-itZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="eWy-5H-tAF"/>
                             <constraint firstAttribute="trailing" secondItem="bW2-ru-cdy" secondAttribute="trailing" constant="30" id="jHL-n5-bGU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="rl6-aY-itZ" id="off-Xf-5oQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
